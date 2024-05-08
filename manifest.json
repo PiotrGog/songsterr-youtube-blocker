@@ -4,21 +4,11 @@
     "description": "Extension which block popup dialog when playing youtube sync in Songsterr",
     "version": "1.0",
     "action": {
-        "default_icon": "songsterr_icon.png"
+        "default_icon": "assets/songsterr_icon.png"
     },
     "permissions": [
         "activeTab",
         "scripting"
-    ],
-    "content_scripts": [
-        {
-            "js": [
-                "scripts/content.js"
-            ],
-            "matches": [
-                "https://www.songsterr.com/*"
-            ]
-        }
     ],
     "background": {
         "service_worker": "scripts/background.js"
